@@ -5,6 +5,8 @@ with open('s3://sibyltest/IO_test/sent_train_1.csv', 'r') as f:
     print(data)
     f.seek(5, 0)
     print("current position: ", f.tell())
+    data_10 = f.read(10)
+    print(data_10)
 
 # init alluxio system
 # cat
